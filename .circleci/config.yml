@@ -1,17 +1,9 @@
+orbs:
+  docker: circleci/docker@1.5.0
 version: 2.1
-jobs:
-  build:
-    working_directory: /
-    docker:
-      - image: hello-public-repo:latest
-        auth:
-          username: $DOCKER_HUB_USER_ID
-          password: $DOCKER_HUB_PWD
-    steps:
-      - checkout
-      - setup_remote_docker
-      - deploy:
-          name: Publish application to docker hub
-          command: |
-            docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID $DOCKER_HUB_PWD
-            docker push $DOCKER_HUB_USER_ID/hello-public-repo:latest
+workflows:
+  build-docker-image-only:
+    jobs:
+      - docker/publish:
+          image: $DOCKER_HUB_USER_ID/hello-public-repo
+          update-description: true
