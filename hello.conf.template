@@ -13,6 +13,6 @@ server {
     sub_filter 'server_date' '$time_local';
     sub_filter 'request_id' '$request_id';
     sub_filter 'app_environment' '${APP_ENV}';
-#    sub_filter 'secret_value' '$secret_value';
+    sub_filter 'secret_value' '${SECRET_VALUE}';
 }
 
