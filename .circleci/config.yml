@@ -1,18 +1,18 @@
-version: 2.1
 jobs:
-  build:
-    docker:
-      - image: circleci/golang:1.15
-        auth:
-          username: mauroorlando
-          password: $DOCKERHUB_PASSWORD
+  build-and-push:
+    executor: docker/docker
     steps:
-
-      - setup_remote_docker:
-          version: 19.03.13
-
-      - run: |
-          TAG=latest
-          docker build -t mauroorlando/hello-public-repo:$TAG .
-          echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
-          docker push mauroorlando/hello-public-repo:$TAG
+#      - setup_remote_docker
+#      - checkout
+#      - docker/check
+      - docker/build:
+          image: mauroorlando/hello-public-repo/hello-docker-image
+      - docker/push:
+          image: mauroorlando/hello-public-repo/hello-docker-image
+orbs:
+  docker: circleci/docker@1.5.0
+version: 2.1
+workflows:
+  commit:
+    jobs:
+      - build-and-push
