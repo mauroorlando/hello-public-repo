@@ -6,4 +6,5 @@ workflows:
     jobs:
       - docker/publish:
           image: $DOCKER_HUB_USER_ID/hello-public-repo
+          tag: latest
           update-description: true
