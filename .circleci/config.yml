@@ -3,7 +3,10 @@ jobs:
   build:
     working_directory: /
     docker:
-      - image: hello-docker-image:latest
+      - image: hello-public-repo:latest
+        auth:
+          username: $DOCKER_HUB_USER_ID
+          password: $DOCKER_HUB_PWD
     steps:
       - checkout
       - setup_remote_docker
