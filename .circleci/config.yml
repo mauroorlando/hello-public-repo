@@ -5,5 +5,5 @@ workflows:
   build-docker-image-only:
     jobs:
       - docker/publish:
-          image: $DOCKER_HUB_USER_ID/hello-public-repo:latest
+          image: $DOCKER_HUB_USER_ID/hello-public-repo
           update-description: true
