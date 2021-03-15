@@ -1,18 +1,14 @@
-jobs:
-  build-and-push:
-    executor: docker/docker
-    steps:
-#      - setup_remote_docker
-#      - checkout
-#      - docker/check
-      - docker/build:
-          image: mauroorlando/hello-public-repo/hello-docker-image
-      - docker/push:
-          image: mauroorlando/hello-public-repo/hello-docker-image
-orbs:
-  docker: circleci/docker@1.5.0
 version: 2.1
-workflows:
-  commit:
-    jobs:
-      - build-and-push
+jobs:
+  build:
+    working_directory: /
+    docker:
+      - image: hello-docker-image:latest
+    steps:
+      - checkout
+      - setup_remote_docker
+      - deploy:
+          name: Publish application to docker hub
+          command: |
+            docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID $DOCKER_HUB_PWD
+            docker push $DOCKER_HUB_USER_ID/hello-public-repo:latest
