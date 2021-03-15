@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kubernetes-helm-challenge-mo",
+  "private_key_id": "3a81884211f6f648d4151609f0d56d15cf95cdcf",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDc2bJhXNZP+GBm\nSzkwRsU/JXdRrTQL2eh+U9OpTodUhaYFwBweZtvINMBGU4XYXxWofaxvrgdgrzGW\n90fN3ftsCRHG9aE5QYndnSPd/WNi8evdhgYjLzeU5XLmuiDZKMr8BH5NRMIRiDqa\nDEDwWqCd9712yOvEaz1AeA9dJuPZEy2mXX9GlbtMiDWxA/YeQOfTWtPiK26kIwiX\nY9opZ8HUF6cBwnzX16qtpeqWV5q/Mz0gwcr8G6JU9RlX+bXLtyyBynchqGxEJD4W\nf9VkBInI7t8EuPAwo0S33+s/BlO2SZeBHA8QmgQjDODWcbIVi2GGunUmNnkkfTov\nLz64hKOBAgMBAAECggEAAj0lOyoyJH2luYe/8Mq432zhbqcpOMkI27X9FnFsuwk/\nT33c8xxzFC6ft97LI7BEE5ERlVC/86WXBLslQ9OhI71cTCZrj91nmMLp7QtPbX57\nGAPurj7hav2f+nGO2XC5zQ/9GUquBng5ctwWsPEUQYG0Tp7XEAbPyEZnTngRVX8g\n1E4iyoTZXOiTkSaQ3w8TlNTPVAXCnHrg+OC4SvOdFlrfaVuTT4xoI9Ehp9/zoJBX\nPobTajh2VLWUzR+M32V5OAiREHs2caFeeUA+wYdCAnn3dSrIa19S3M1Y2MAo1bT4\nIAF2++8t7NbMcagB7HMrEHc5Z4R4t4/bDcrsg2zjKQKBgQDt6A7I+G10q9mgGyZQ\nW3b4XctF6LT+VvJYouuQuCtZ37n9D2ijOR1MdM5IRvai+MMqTURvDQbQf1AYwNTK\nSexRzSwGjWFQ1/7vGk5jWUlr+3ZDY9NPf232oAFa3a01EF5btSTawVs3pm8PRXGC\nXc0DuuXEWnJzP4QeC8cdYLfpuQKBgQDtpZBTHvMAizk22kIEHgjVb+tL9LVW7AtH\n9oPgkWYBkRBaDCw4dV3E+CXROI4ZJd25YrUDSphXCua+hlftypTpolm3zDAEOA30\n0jRt16uLVlGSL0cthEW8P2F4BN4rFAEqXtYFrQ6XTgzsgiLiCwjfgK18WMtNT6G9\nuYwi8T7MCQKBgDVp1nf0ns6FDtVNgyqjfnCAznShrJE2AC86VN0nHESPYHiajwmm\ndxeFWhMMK6+nXloPAwBT0mXZT6hfEudf9XjgMbQ+5cx60jfolhTkJQHjcUfsD7NX\njt7CScuW3Z5+UFESuHWM1+gErAantrZoTPE7cv7Et9F8PzNnvYqw/lmxAoGAI7tn\nLfhTVVuZqLO8hV32uhDv8iXDNmSbdaCNR7DVA5tKOB/objzHcpxVI1Y7l3BoHD3J\nNct7iGrtMuyEQA7bwR1WHBqphZjgEFWi6HkrI/JApZhSPXfL/HgTMbaZqSSC4FoO\nGCBjN0DXFKCkmhRKq0Bv1WiMeP1mNl61wXNAm/ECgYAWza4AmzfcUpy/VxqUZzOI\n/YwAVPCBABUdCUapbZD9nxRjdXuKrAS4Law5OQMG7gPjdGUfrPv+r/6cYxvs7DOZ\nu68k8bbhtSVrNy9Gno5HEUSX9Eayf54VoxsMCg1G1ByWMO0mEDr0TLTxACz4IY9O\nWx06caRrBvRJRj2p4Io2fA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform@kubernetes-helm-challenge-mo.iam.gserviceaccount.com",
+  "client_id": "104084300386691574023",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40kubernetes-helm-challenge-mo.iam.gserviceaccount.com"
+}
